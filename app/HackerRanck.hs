@@ -753,7 +753,20 @@ solveIs list = case last list of
    1 -> True
    _ -> lazyFoldZipWith (==) list ([last list] ++ list)
 
-123456
-7
 
 
+newtype Vector = MkVec [Float] deriving (Eq, Show, Read, Ord)
+
+lengthVec :: Vector -> Float
+lengthVec (MkVec xs) = sqrt . foldr (\x acc -> acc + x*x) 0 $ xs
+
+vecInprod :: Vector -> Vector -> Float
+vecInprod (MkVec xs) (MkVec ys) = sum $ zipWith (*) xs ys
+
+lengthVec' v = sqrt $ vecInprod v v
+
+newtype Matrix = MkMat [[Float]] deriving (Eq, Show, Read, Ord)
+
+transpose' :: Matrix -> Matrix
+transpose' (MkMat xxs) = MkMat $ foldr (zipWith (:)) e xxs where
+  e = repeat []

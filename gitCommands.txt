@@ -1,0 +1,4 @@
+git cherry-pick - "вишенка на торте"
+	добавляет последний коммит в текущую ветку, но не удаляет оригинальный
+
+git reset - Reset current HEAD to the specified state

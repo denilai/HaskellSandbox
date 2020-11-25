@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c14169611a0e66aa60836c47c4feccd2b4fecc89b69cbd264dcd95a7376d762a
+-- hash: ae709c579a56c2cd7fe1aa4094843475ca69775fb8d63819cb26c49d91345dbf
 
 name:           sandbox
 version:        0.1.0.0
@@ -27,9 +27,21 @@ source-repository head
 
 library
   exposed-modules:
+      CarNumbers
+      ChocolateBar
       ConvexHull
       DenParse
+      GaussMethod
+      Golf
+      IntegralStuff
       Lib
+      Log
+      LogAnalysis
+      MatrixGauss
+      MyTree
+      RankBoard
+      Samples
+      TrapezeMethod
       Tree
   other-modules:
       Paths_sandbox
