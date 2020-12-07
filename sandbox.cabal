@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ae709c579a56c2cd7fe1aa4094843475ca69775fb8d63819cb26c49d91345dbf
+-- hash: 7ac6fca405bb7d70e7135588af8aebafdfc6ec3bcc726451f6c75405506c214b
 
 name:           sandbox
 version:        0.1.0.0
@@ -38,6 +38,9 @@ library
       Log
       LogAnalysis
       MatrixGauss
+      MatrixOrtogonal
+      MatrixStuff
+      Misha
       MyTree
       RankBoard
       Samples
